@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anik Roy | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ════════════════════════════
+     NAVIGATION
+════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-brand">AR</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#guestbook">Guestbook</a></li>
+  </ul>
+  <button id="darkToggle">☀️ Light</button>
+</nav>
+
+<!-- ════════════════════════════
+     HERO
+════════════════════════════ -->
+<header id="hero">
+  <div class="hero-left">
+    <div class="hero-tag-row">
+      <span class="tag">🇧🇩 Bangladesh</span>
+      <span class="tag">🇰🇷 Korea</span>
+      <span class="tag">Age 22</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="thin">Hello, I'm</span>
+      <br/>Anik<br/><em>Roy</em>
+    </h1>
+    <p class="hero-desc">Computer Engineering student at Seoul Theological University, Bucheon. Dreaming in code, living for software.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-main">See My Work</a>
+      <a href="#guestbook" class="btn-ghost">Say Hello ↓</a>
+    </div>
+    <div class="dday-strip">
+      <span class="dday-label">📅 Days in Korea</span>
+      <span id="ddayCount" class="dday-num">—</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img
+        src="C:\Users\Acer\Downloads\82961.jpg"
+        alt="Anik Roy"
+        class="hero-photo"
+      />
+      <div class="hero-img-badge">Software<br/>Engineer<br/>in Making</div>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════════════
+     ABOUT
+════════════════════════════ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-text">
+      <p class="section-eyebrow">// Who I Am</p>
+      <h2 class="section-heading">A Developer<br/>with Purpose</h2>
+      <p class="about-para">I'm Anik Roy, 22, originally from the beautiful country of Bangladesh 🇧🇩. I came to South Korea to pursue my passion for computer engineering at Seoul Theological University in Bucheon.</p>
+      <p class="about-para">My goal is clear — become a skilled <strong>Software Engineer</strong> who builds real solutions that matter. Every assignment, every bug fixed, every line of code is one step closer to that dream.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">22</span>
+          <span class="stat-label">Years Old</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Hobbies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Big Dream</span>
+        </div>
+      </div>
+    </div>
+    <div class="skills-wrap">
+      <p class="section-eyebrow">// Skills</p>
+      <div class="skills-grid">
+        <div class="skill-item"><span class="skill-dot"></span>HTML & CSS</div>
+        <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+        <div class="skill-item"><span class="skill-dot"></span>Python</div>
+        <div class="skill-item"><span class="skill-dot"></span>Flexbox</div>
+        <div class="skill-item"><span class="skill-dot"></span>Git & GitHub</div>
+        <div class="skill-item"><span class="skill-dot"></span>Responsive Design</div>
+        <div class="skill-item"><span class="skill-dot"></span>Dark Mode</div>
+        <div class="skill-item"><span class="skill-dot"></span>AI Tools</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     HOBBIES GALLERY
+════════════════════════════ -->
+<section id="hobbies">
+  <div class="section-inner-full">
+    <p class="section-eyebrow center">// What I Love</p>
+    <h2 class="section-heading center">My Hobbies</h2>
+    <div class="gallery-container">
+      <div class="gallery-display">
+        <div class="gallery-img-box" id="galleryImgBox">
+          <img id="galleryImg" src="" alt="" />
+          <div class="gallery-overlay">
+            <h3 id="galleryTitle"></h3>
+            <p id="galleryDesc"></p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-controls">
+        <div class="gallery-info">
+          <span class="gallery-counter" id="galleryIndex">01 / 03</span>
+        </div>
+        <div class="gallery-dots" id="galleryDots">
+          <div class="gdot active" id="gdot0"></div>
+          <div class="gdot" id="gdot1"></div>
+          <div class="gdot" id="gdot2"></div>
+        </div>
+        <button id="nextBtn">Next <span>→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     PROJECTS
+════════════════════════════ -->
+<section id="projects">
+  <div class="section-inner-full">
+    <p class="section-eyebrow center">// What I've Built</p>
+    <h2 class="section-heading center">Projects</h2>
+    <div class="projects-row">
+
+      <div class="pcard">
+        <div class="pcard-num">01</div>
+        <div class="pcard-icon">🌐</div>
+        <h3 class="pcard-title">Personal Portfolio</h3>
+        <p class="pcard-desc">A responsive portfolio website featuring dark mode, hobby gallery with JS array, D-Day counter, and guestbook — built from scratch.</p>
+        <div class="pcard-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-num">02</div>
+        <div class="pcard-icon">📱</div>
+        <h3 class="pcard-title">Responsive Web Design</h3>
+        <p class="pcard-desc">A fully responsive multi-page web layout using media queries, flexbox, and grid — works on mobile, tablet, and desktop.</p>
+        <div class="pcard-tags">
+          <span>CSS Grid</span><span>Flexbox</span><span>Media Queries</span>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-num">03</div>
+        <div class="pcard-icon">🤖</div>
+        <h3 class="pcard-title">AI Chat Interface</h3>
+        <p class="pcard-desc">An interactive AI-powered chat interface using the Gemini API, styled with modern CSS and dynamic JS DOM manipulation.</p>
+        <div class="pcard-tags">
+          <span>Gemini API</span><span>JavaScript</span><span>CSS</span>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-num">04</div>
+        <div class="pcard-icon">🐍</div>
+        <h3 class="pcard-title">Python Exercises</h3>
+        <p class="pcard-desc">Completed Python problem sets including loops, functions, classes and string manipulation as part of coursework.</p>
+        <div class="pcard-tags">
+          <span>Python</span><span>OOP</span><span>Algorithms</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     GUESTBOOK
+════════════════════════════ -->
+<section id="guestbook">
+  <div class="section-inner">
+    <div class="gb-left">
+      <p class="section-eyebrow">// Leave a Note</p>
+      <h2 class="section-heading">Guestbook</h2>
+      <p class="about-para">Have something to say? Drop a message below and I'll remember you visited!</p>
+      <div class="gb-entries" id="entriesList"></div>
+    </div>
+    <div class="gb-right">
+      <div class="gb-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="gName" placeholder="e.g. Prof. Chung"/>
+        </div>
+        <div class="form-group">
+          <label>Email (optional)</label>
+          <input type="email" id="gEmail" placeholder="you@email.com"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="gMessage" placeholder="Write something..."></textarea>
+        </div>
+        <button id="submitBtn">Send Message ✉</button>
+        <p id="guestMsg"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Anik Roy</div>
+    <p class="footer-sub">Computer Engineering · Seoul Theological University · Bucheon, Korea</p>
+    <p class="footer-contact">📧 anikroy@stu.ac.kr &nbsp;|&nbsp; 📱 +82-10-XXXX-XXXX</p>
+    <p class="footer-copy">© 2026 Anik Roy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>           
